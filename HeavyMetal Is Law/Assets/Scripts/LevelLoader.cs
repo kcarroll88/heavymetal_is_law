@@ -6,15 +6,25 @@ using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour
 {
+    [Header("Loading Time")]
+    [SerializeField] int splashLoadingTime = 4;
+
+    int currentSceneIndex;
+
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(LoadMainMenu());
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
+        if (currentSceneIndex == 0)
+        {
+            StartCoroutine(LoadMainMenu());
+        }
     }
 
     IEnumerator LoadMainMenu()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(splashLoadingTime);
         SceneManager.LoadScene("Start Screen");
     }
 

@@ -33,6 +33,11 @@ public class LevelLoader : MonoBehaviour
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
 
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
     // Update is called once per frame
     void Update()
     {

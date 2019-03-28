@@ -25,7 +25,12 @@ public class LevelLoader : MonoBehaviour
     IEnumerator LoadMainMenu()
     {
         yield return new WaitForSeconds(splashLoadingTime);
-        SceneManager.LoadScene("Start Screen");
+        LoadNextScene();
+    }
+
+    public void LoadNextScene()
+    {
+        SceneManager.LoadScene(currentSceneIndex + 1);
     }
 
     // Update is called once per frame

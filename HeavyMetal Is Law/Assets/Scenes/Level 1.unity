@@ -248,7 +248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11c6eca6f3841459f8b922d6f69380f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defender: {fileID: 3809335712315335418, guid: 2ad076d13cda14fb5a41ec9ef10addbc,
+  defender: {fileID: 3058527843003007730, guid: 2ad076d13cda14fb5a41ec9ef10addbc,
     type: 3}
 --- !u!1001 &462354992
 PrefabInstance:

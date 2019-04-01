@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AttackerSpawner : MonoBehaviour
 {
-    [SerializeField] GameObject enemy;
+    [SerializeField] Attacker enemy;
     [SerializeField] int minEnemies;
     [SerializeField] int maxEnemies;
     [SerializeField] float minSpawnTime = 1f;
@@ -30,6 +30,7 @@ public class AttackerSpawner : MonoBehaviour
 
     private void SpawnAttacker()
     {
-        Instantiate(enemy, transform.position, Quaternion.identity);
+        Attacker newAttacker = Instantiate(enemy, transform.position, Quaternion.identity) as Attacker;
+        newAttacker.transform.parent = transform;
     }
 }

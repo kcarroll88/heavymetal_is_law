@@ -10,4 +10,9 @@ public class Defender : MonoBehaviour
     {
         FindObjectOfType<ResourceDisplay>().AddResource(amount);
     }
+
+    public int GetStarCost()
+    {
+        return defenderCost;
+    }
 }

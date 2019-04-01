@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1d3ae66af58244058fac13a323cdb4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defenderCost: 100
+  defenderCost: 15
 --- !u!1 &173803817293064445
 GameObject:
   m_ObjectHideFlags: 0

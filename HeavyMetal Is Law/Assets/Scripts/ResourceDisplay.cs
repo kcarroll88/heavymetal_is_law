@@ -20,6 +20,11 @@ public class ResourceDisplay : MonoBehaviour
         resourceText.text = resources.ToString();
     }
 
+    public bool EnoughResources(int amount)
+    {
+        return resources >= amount;
+    }
+
     public void AddResource(int amount)
     {
         resources += amount;

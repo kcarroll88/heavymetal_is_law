@@ -984,6 +984,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trophy
       objectReference: {fileID: 0}
+    - target: {fileID: 8743809427786896730, guid: c742775a521b5455ebb470aee5c43c6b,
+        type: 3}
+      propertyPath: defenderCost
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 173803817122107416, guid: c742775a521b5455ebb470aee5c43c6b,
         type: 3}
       propertyPath: m_LocalPosition.x

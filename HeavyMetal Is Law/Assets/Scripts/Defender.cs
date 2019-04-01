@@ -6,8 +6,8 @@ public class Defender : MonoBehaviour
 {
     [SerializeField] int defenderCost = 100;
 
-    public void CostOfDefender(Defender costOfDefender)
+    public void AddResourceToTotal(int amount)
     {
-
+        FindObjectOfType<ResourceDisplay>().AddResource(amount);
     }
 }

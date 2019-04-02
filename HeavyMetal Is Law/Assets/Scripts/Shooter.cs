@@ -16,19 +16,19 @@ public class Shooter : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    //private void Update()
-    //{
-    //    if (AttackerIsInLane())
-    //    {
-    //        Debug.Log("Fire");
-    //        animator.SetBool("IsAttacking", true);
-    //    }
-    //    else
-    //    {
-    //        Debug.Log("Idle");
-    //        animator.SetBool("IsAttacking", false);
-    //    }
-    //}
+    private void Update()
+    {
+        if (AttackerIsInLane())
+        {
+            Debug.Log("Fire");
+            animator.SetBool("IsAttacking", true);
+        }
+        else
+        {
+            Debug.Log("Idle");
+            animator.SetBool("IsAttacking", false);
+        }
+    }
 
     private void SetLaneSpawner()
     {
@@ -45,17 +45,17 @@ public class Shooter : MonoBehaviour
         }
     }
 
-    //private bool AttackerIsInLane()
-    //{
-    //    if (myLaneSpawner.transform.childCount <= 0)
-    //    {
-    //        return false;
-    //    }
-    //    else
-    //    {
-    //        return true;
-    //    }
-    //}
+    private bool AttackerIsInLane()
+    {
+        if (myLaneSpawner.transform.childCount <= 0)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
 
     public void Fire()
     {

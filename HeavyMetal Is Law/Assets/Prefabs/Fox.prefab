@@ -91,6 +91,8 @@ GameObject:
   - component: {fileID: 3713201291634153236}
   - component: {fileID: 7654888509771664066}
   - component: {fileID: 5842917943985043808}
+  - component: {fileID: 874670992}
+  - component: {fileID: 874670991}
   m_Layer: 0
   m_Name: Fox
   m_TagString: Untagged
@@ -158,3 +160,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 25
   deathVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5, type: 3}
+--- !u!114 &874670992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3713201291634153235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac69a95d9c53d4645b0886c247b3073a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &874670991
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3713201291634153235}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.001937151, y: -0.21311784}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.7868819, y: 0.5040169}
+  m_EdgeRadius: 0

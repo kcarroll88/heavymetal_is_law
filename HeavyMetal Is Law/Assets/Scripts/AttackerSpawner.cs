@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class AttackerSpawner : MonoBehaviour
 {
-    [SerializeField] Attacker enemy;
-    [SerializeField] int minEnemies;
-    [SerializeField] int maxEnemies;
+    [SerializeField] Attacker[] enemyArray;
     [SerializeField] float minSpawnTime = 1f;
     [SerializeField] float maxSpawnTime = 5f;
 
@@ -22,15 +20,15 @@ public class AttackerSpawner : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void SpawnAttacker()
     {
-        Attacker newAttacker = Instantiate(enemy, transform.position, Quaternion.identity) as Attacker;
+        var attackerIndex = Random.Range(0, enemyArray.Length);
+        Spawn(enemyArray[attackerIndex]);
+    }
+
+    private void Spawn(Attacker myAttacker)
+    {
+        Attacker newAttacker = Instantiate(myAttacker, transform.position, Quaternion.identity) as Attacker;
         newAttacker.transform.parent = transform;
     }
 }

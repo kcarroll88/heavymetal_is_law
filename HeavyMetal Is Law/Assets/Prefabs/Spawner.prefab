@@ -43,8 +43,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d26b9f09f45f4e99b3d2b9f9b063633, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 7094376101902183551, guid: 19de3f6daabf44ef898785f8b16e8ae6, type: 3}
-  minEnemies: 0
-  maxEnemies: 0
+  enemyArray:
+  - {fileID: 7654888509771664066, guid: 85dba8238d0d04629a36ef5a678bc7da, type: 3}
+  - {fileID: 1086689842358978750, guid: dca5a1b810463425897422884ef26b22, type: 3}
+  - {fileID: 7094376101902183551, guid: 19de3f6daabf44ef898785f8b16e8ae6, type: 3}
   minSpawnTime: 4
   maxSpawnTime: 8

@@ -90,8 +90,10 @@ GameObject:
   - component: {fileID: 1086689842358978751}
   - component: {fileID: 1086689842358978737}
   - component: {fileID: 1086689842358978750}
-  - component: {fileID: 1659875261}
+  - component: {fileID: 3962793308157694384}
   - component: {fileID: 7973103293673193216}
+  - component: {fileID: 1659875261}
+  - component: {fileID: 8121857184767492071}
   m_Layer: 0
   m_Name: Jabba
   m_TagString: Untagged
@@ -145,6 +147,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ca662829adf24c46908c0563580d309, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3962793308157694384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086689842358978738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf0ef5063e078406ca3a003559e3c2d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7973103293673193216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086689842358978738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 420dd858ae58a46a4be868c355765ca3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 200
+  deathVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5, type: 3}
 --- !u!60 &1659875261
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -245,17 +273,24 @@ PolygonCollider2D:
       - {x: -1.275, y: 0.04}
       - {x: -1.285, y: 0.04}
       - {x: -1.285, y: 0}
---- !u!114 &7973103293673193216
-MonoBehaviour:
+--- !u!50 &8121857184767492071
+Rigidbody2D:
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1086689842358978738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 420dd858ae58a46a4be868c355765ca3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 200
-  deathVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5, type: 3}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

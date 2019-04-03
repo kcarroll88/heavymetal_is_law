@@ -25,5 +25,10 @@ public class GameOverDisplay : MonoBehaviour
     {
         lives -= takeLife;
         UpdateText();
+
+        if (lives <= 0)
+        {
+            FindObjectOfType<LevelLoader>().GameOver();
+        }
     }
 }

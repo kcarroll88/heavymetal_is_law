@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameOverCollider : MonoBehaviour
 {
-    private void OnCollisionEnter2D()
+    private void OnTriggerEnter2D()
     {
         FindObjectOfType<GameOverDisplay>().SubtractLife();
     }

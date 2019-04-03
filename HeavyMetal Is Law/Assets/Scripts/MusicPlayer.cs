@@ -12,7 +12,7 @@ public class MusicPlayer : MonoBehaviour
     {
         var currentScene = SceneManager.GetActiveScene().buildIndex;
 
-        if (currentScene == 1 && currentScene == 4)
+        if (currentScene == 1 || currentScene == 4)
         {
             DontDestroyOnLoad(this);
         }

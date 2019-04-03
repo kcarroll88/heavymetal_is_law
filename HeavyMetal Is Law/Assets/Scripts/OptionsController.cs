@@ -33,4 +33,9 @@ public class OptionsController : MonoBehaviour
         PlayerPrefsController.SetMasterVolume(volumeSlider.value);
         FindObjectOfType<LevelLoader>().LoadMainMenuClassic();
     }
+
+    public void SetDefaults()
+    {
+        volumeSlider.value = defaultVolume;
+    }
 }

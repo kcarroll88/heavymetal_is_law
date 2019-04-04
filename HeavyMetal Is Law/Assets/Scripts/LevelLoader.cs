@@ -20,6 +20,7 @@ public class LevelLoader : MonoBehaviour
         {
             StartCoroutine(LoadMainMenu());
         }
+        StartCoroutine(LoadMainMenuTwo());
     }
 
     IEnumerator LoadMainMenu()
@@ -46,6 +47,16 @@ public class LevelLoader : MonoBehaviour
     public void LoadNextScene()
     {
         SceneManager.LoadScene(currentSceneIndex + 1);
+    }
+
+    IEnumerator LoadMainMenuTwo()
+    {
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        if (currentSceneIndex == 1)
+        {
+            yield return new WaitForSeconds(splashLoadingTime);
+            LoadMainMenuClassic();
+        }
     }
 
     public void GameOver()

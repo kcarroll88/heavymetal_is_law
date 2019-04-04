@@ -275,7 +275,7 @@ Transform:
   - {fileID: 7789187334708820695}
   - {fileID: 7789187334369701994}
   - {fileID: 7789187335762849800}
-  m_Father: {fileID: 7789187335345571329}
+  m_Father: {fileID: 6319450004072750421}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7789187334810333089
@@ -466,7 +466,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7789187335345571329}
+  - component: {fileID: 6319450004072750421}
+  - component: {fileID: 3830781136333417008}
   m_Layer: 0
   m_Name: Bottom Info Bar
   m_TagString: Untagged
@@ -474,21 +475,47 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7789187335345571329
-Transform:
+--- !u!224 &6319450004072750421
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7789187335345571328}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.2054968, y: 0.089867204, z: 0.5193078}
+  m_LocalPosition: {x: 0, y: 0, z: 0.5193078}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7789187334810333090}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1.2054968, y: 0.089867204}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!223 &3830781136333417008
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7789187335345571328}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &7789187335762849803
 GameObject:
   m_ObjectHideFlags: 0

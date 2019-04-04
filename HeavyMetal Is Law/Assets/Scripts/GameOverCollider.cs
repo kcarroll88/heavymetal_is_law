@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class GameOverCollider : MonoBehaviour
 {
-    private void OnTriggerEnter2D()
+    private void OnTriggerEnter2D(Collider2D otherCollider)
     {
         FindObjectOfType<GameOverDisplay>().SubtractLife();
+        Destroy(otherCollider.gameObject);
     }
 }

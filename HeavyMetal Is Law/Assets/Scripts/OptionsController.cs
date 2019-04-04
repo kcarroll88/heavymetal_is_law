@@ -5,13 +5,18 @@ using UnityEngine.UI;
 
 public class OptionsController : MonoBehaviour
 {
+    [Header("Volume")]
     [SerializeField] Slider volumeSlider;
     [SerializeField] float defaultVolume = 0.8f;
+    [Header("Difficulty")]
+    [SerializeField] Slider difficultySlider;
+    [SerializeField] float defaultDifficulty = 0f;
 
     // Start is called before the first frame update
     void Start()
     {
         volumeSlider.value = PlayerPrefsController.GetMasterVolume();
+        difficultySlider.value = PlayerPrefsController.GetDifficulty();
     }
 
     // Update is called once per frame
@@ -31,11 +36,13 @@ public class OptionsController : MonoBehaviour
     public void SaveAndExit()
     {
         PlayerPrefsController.SetMasterVolume(volumeSlider.value);
+        PlayerPrefsController.SetDifficulty(difficultySlider.value);
         FindObjectOfType<LevelLoader>().LoadMainMenuClassic();
     }
 
     public void SetDefaults()
     {
         volumeSlider.value = defaultVolume;
+        difficultySlider.value = defaultDifficulty;
     }
 }

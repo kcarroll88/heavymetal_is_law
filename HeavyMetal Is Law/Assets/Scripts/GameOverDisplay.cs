@@ -6,12 +6,16 @@ using UnityEngine.UI;
 
 public class GameOverDisplay : MonoBehaviour
 {
-    [SerializeField] int lives = 5;
+    [SerializeField] float baseLives = 3;
     [SerializeField] int takeLife = 1;
+
+    float lives;
+
     Text healthText;
 
     private void Start()
     {
+        lives = baseLives - PlayerPrefsController.GetDifficulty();
         healthText = GetComponent<Text>();
         UpdateText();
     }
